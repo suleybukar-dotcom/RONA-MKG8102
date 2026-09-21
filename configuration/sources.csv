@@ -1,0 +1,256 @@
+nom,type,fiabilite,connecteur,frequence,ville,adresse,biais_connu
+"Avis publics — BMR Château-Richer Raymond Boies (région de Québec)","Secondaire","Pauvre","Apify","Hebdomadaire","Québec","https://www.google.com/maps/place/?q=place_id:ChIJZcp5XsO3uEwRHPCSBcDhBTE","Avis publics : surreprésentent les expériences extrêmes. Biais supplémentaire majeur : BMR n'a aucune succursale dans la ville de Québec; ce marchand affilié est situé à environ 46 km du centre, en milieu semi-rural. Son profil thématique n'est pas comparable à celui des trois autres bannières de l'échantillon de Québec, toutes urbaines. Échantillon figé le 6 septembre 2026 : note 4,3 sur 157 avis. NOTE DE CORRECTION (6 septembre 2026) : l'adresse initialement inscrite pour cette source était erronée — identifiant cid construit et non vérifié, ce qui a fait échouer la collecte du 6 septembre. Remplacée par l'adresse fondée sur le place_id réel issu de la recherche."
+"Avis publics — BMR Matco St-Léonard (Montréal)","Secondaire","Pauvre","Apify","Hebdomadaire","Montréal","https://maps.google.com/?cid=9361588258271662022","Avis publics : surreprésentent les expériences extrêmes et les clientèles urbaines. Échantillon figé le 6 septembre 2026 : note 4,0 sur 674 avis."
+"Avis publics — BMR PRO Pierre Naud (Trois-Rivières)","Secondaire","Pauvre","Apify","Hebdomadaire","Trois-Rivières","https://maps.google.com/?cid=15649849078164799992","Avis publics : surreprésentent les expériences extrêmes. Volume d'avis très faible (65) comparé aux autres succursales de l'échantillon — un seul avis y pèse beaucoup plus lourd; prudence dans toute comparaison de profil thématique. Échantillon figé le 6 septembre 2026 : note 3,9."
+"Avis publics — Canac L'Ancienne-Lorette (Québec)","Secondaire","Pauvre","Apify","Hebdomadaire","Québec","https://maps.google.com/?cid=12753459098889076490","Avis publics : surreprésentent les expériences extrêmes. Échantillon figé le 6 septembre 2026 : note 4,2 sur 992 avis."
+"Avis publics — Canac Laval (Montréal)","Secondaire","Pauvre","Apify","Hebdomadaire","Montréal","https://maps.google.com/?cid=6603439885141484823","Avis publics : surreprésentent les expériences extrêmes et les clientèles urbaines. Succursale située à Laval et non à Montréal même — acceptée par décision d'équipe comme représentante du marché montréalais. Échantillon figé le 6 septembre 2026 : note 4,2 sur 747 avis."
+"Avis publics — Canac Récollets (Trois-Rivières)","Secondaire","Pauvre","Apify","Hebdomadaire","Trois-Rivières","https://maps.google.com/?cid=17991188268772362746","Avis publics : surreprésentent les expériences extrêmes. Échantillon figé le 6 septembre 2026 : note 4,4 sur 625 avis (note la plus élevée de l'échantillon)."
+"Avis publics — Home Depot Beaubien Ouest (Montréal)","Secondaire","Pauvre","Apify","Hebdomadaire","Montréal","https://maps.google.com/?cid=11177798630459516953","Avis publics : surreprésentent les expériences extrêmes et les clientèles urbaines. Échantillon figé le 6 septembre 2026 : note 3,8 sur 3129 avis (le plus gros volume de l'échantillon)."
+"Avis publics — Home Depot Québec (Bouvier)","Secondaire","Pauvre","Apify","Hebdomadaire","Québec","https://maps.google.com/?cid=8749415587224338864","Avis publics : surreprésentent les expériences extrêmes. Échantillon figé le 6 septembre 2026 : note 4,3 sur 2111 avis."
+"Avis publics — Home Depot Trois-Rivières","Secondaire","Pauvre","Apify","Hebdomadaire","Trois-Rivières","https://maps.google.com/?cid=10653776038399962885","Avis publics : surreprésentent les expériences extrêmes. Échantillon figé le 6 septembre 2026 : note 4,3 sur 1267 avis."
+"Avis publics — RONA+ Marché Central (Montréal)","Secondaire","Pauvre","Apify","Hebdomadaire","Montréal","https://maps.google.com/?cid=3027851216011539040","Avis publics : surreprésentent les expériences extrêmes (très satisfaites ou très insatisfaites) et les clientèles urbaines. Indiquent une hiérarchie de thèmes, jamais une fréquence de population. Échantillon figé le 6 septembre 2026 : note 3,8 sur 1685 avis."
+"Avis publics — RONA+ Québec (Bouvier)","Secondaire","Pauvre","Apify","Hebdomadaire","Québec","https://maps.google.com/?cid=10142058467232896591","Avis publics : surreprésentent les expériences extrêmes. Échantillon figé le 6 septembre 2026 : note 3,8 sur 1199 avis."
+"Avis publics — RONA+ Trois-Rivières","Secondaire","Pauvre","Apify","Hebdomadaire","Trois-Rivières","https://maps.google.com/?cid=2972223134191496703","Avis publics : surreprésentent les expériences extrêmes. Échantillon figé le 6 septembre 2026 : note 4,0 sur 947 avis."
+"BMR — actualités (tient lieu de salle de presse)","Primaire","Fiable","Firecrawl","Hebdomadaire","","https://www.bmr.ca/fr/actualites","Page d'actualités officielle de BMR : ne publie que les annonces favorables à son image; les fermetures, difficultés ou reculs n'y sont généralement pas annoncés.
+
+Vérifié le 9 septembre 2026 : la page liste rend 10 éléments pour 2026 mais N'AFFICHE AUCUNE DATE. La collecte se fait donc en deux temps, liste puis ouverture de chaque article pour récupérer sa date et son extrait, comme pour la page de relations médias de Home Depot.
+
+Deux signaux repérés le 9 septembre 2026, NON FICHÉS faute de date exploitable, à trancher par l'équipe :
+1. Un affichage au siège social évoque « un programme de transformation majeur visant à regrouper les opérations au sein d'un centre de distribution unique », avec automatisation et plan de transition. C'est le signal de consolidation logistique le plus net du cycle, mais aucune date de publication ne figure sur la page.
+2. Trois nominations de vice-présidents (Opérations; Commercialisation; Réseau et exploitation des magasins), avec entrée en fonction « le 21 septembre » SANS MILLÉSIME.
+Application de la règle : en cas de doute sur la date, aucune fiche. Ces deux signaux restent à dater avant de pouvoir entrer dans la base."
+"BMR — emplois entrepôts","Primaire","Fiable","Firecrawl","Hebdomadaire","","https://www.bmr.ca/fr/emplois-entrepots","Page officielle des postes en centre de distribution de BMR. Vérifiée le 8 septembre 2026 : compteur « 2 postes disponibles », les deux à Boucherville, chacun portant une date.
+
+Sert à distinguer les postes de logistique des postes de plancher en magasin, ce que l'indicateur de la KIQ 1.1 exige explicitement. BMR est la seule bannière dont le portail sépare magasins, entrepôts et siège social : sans cette page, la nature des postes de BMR n'est pas observable.
+
+La colonne de date est intitulée « Ouverte » et ne constitue pas une date de publication de l'affichage : elle ne peut pas servir de date du fait, seulement figurer au résumé en étant nommée.
+
+Règle de comparaison adoptée par l'équipe le 8 septembre 2026 : les volumes d'affichages ne se comparent pas en niveau absolu d'une bannière à l'autre. On compare la variation de chaque bannière par rapport à elle-même entre deux relevés à date comparable."
+"BMR — emplois siège social","Primaire","Fiable","Firecrawl","Hebdomadaire","","https://www.bmr.ca/fr/emplois-siege-social","Page officielle des postes au siège social de BMR, à Boucherville. Vérifiée le 8 septembre 2026 : 11 postes, tous en Permanent - Temps plein, chacun portant une date.
+
+Sert à repérer les postes permanents de gestion, distincts des postes saisonniers de plancher, comme l'exige l'indicateur de la KIQ 1.1.
+
+Fragilité technique : le total s'affiche sous forme d'étiquette de filtre, « Permanent - Temps plein (11) », et non sous forme de phrase. Si un poste d'un autre statut s'ajoute, une deuxième étiquette apparaîtra et une extraction naïve ne lirait que la première. La collecte doit additionner toutes les étiquettes de statut.
+
+La colonne de date est intitulée « Ouverte » et ne constitue pas une date de publication de l'affichage.
+
+Règle de comparaison adoptée par l'équipe le 8 septembre 2026 : on compare la variation de chaque bannière par rapport à elle-même, jamais les niveaux absolus entre bannières."
+"BMR — fil de communiqués Cision","Secondaire","Moyen","Firecrawl","Hebdomadaire","","https://www.newswire.ca/fr/news/groupe-bmr/","Profil d'organisation GROUPE BMR sur newswire.ca (Cision). Vérifié le 8 septembre 2026.
+
+ATTENTION, DEUX PROFILS DISTINCTS ET NON RELIÉS existent sur la plateforme : « GROUPE BMR » en français, à cette adresse, avec un historique complet de 2010 à 2025; et « BMR Group » en anglais, à newswire.ca/news/bmr-group/, qui ne contient qu'un seul communiqué. C'est la version française qu'il faut surveiller. L'adresse française ne se déduit pas de l'anglaise : le slug est groupe-bmr et non bmr-group.
+
+RÉSERVE MAJEURE SUR LE RENDEMENT : le dernier communiqué date du 21 novembre 2025. Aucun communiqué en 2026. Or BMR a bel et bien annoncé une acquisition à Sainte-Anne-des-Monts cette année, mais sur son propre site d'actualités. BMR n'utilise donc plus ce fil. La source sera probablement muette pendant la fenêtre d'observation. Cadence mensuelle plutôt que bimensuelle en conséquence : elle coûte presque rien et un communiqué d'acquisition y réapparaîtrait.
+
+Biais de sélection : un fil de communiqués ne diffuse que ce que l'entreprise choisit de publier. Il ne lève pas l'angle mort des fermetures.
+
+Limites techniques : aucun flux RSS, aucun filtre par date dans l'adresse, tri du plus récent au plus ancien."
+"BMR — page carrières","Primaire","Fiable","Firecrawl","Hebdomadaire","","https://www.bmr.ca/fr/emplois-en-magasins","Page carrières officielle de BMR : surreprésente les régions et postes en expansion; un poste affiché ne confirme pas une embauche réalisée, et les postes saisonniers de plancher peuvent s'y mêler aux postes permanents de gestion ou de logistique.
+
+Règle de comparaison adoptée par l'équipe le 8 septembre 2026 : les volumes d'affichages ne se comparent pas en niveau absolu d'une bannière à l'autre, parce que les modèles d'affaires et les périmètres de portail diffèrent. On compare la variation de chaque bannière par rapport à elle-même entre deux relevés à date comparable.
+
+Portail vérifié le 8 septembre 2026 : ne liste que les postes de l'entreprise BMR elle-même. Une large part des 275 succursales sont des marchands affiliés indépendants qui recrutent de leur côté, ce qui sous-estime fortement le volume réel du réseau. La colonne de date affichée est intitulée « Ouverte » et ne constitue pas une date de publication de l'affichage : elle ne peut donc pas servir de date du fait."
+"BMR — peinture SICO Spécialité 3,78 L (panier fixe)","Primaire","Fiable","Firecrawl","Hebdomadaire","","https://www.bmr.ca/fr/sico-peinture-sico-cuisine-et-salle-de-bains-doux-blanc-pur-3-78-l-062-6710.html","Page produit officielle BMR, code 062-6710. PRODUIT IDENTIQUE à celui retenu chez RONA : peinture SICO cuisine et salle de bains, fini doux, blanc pur, 3,78 L. C'est la seule ligne du panier fixe où deux bannières portent le même article et non des substituts, ce qui en fait la comparaison la plus solide du dispositif.
+
+Vérifié le 8 septembre 2026 en visiteur anonyme : 49,97 $, disponibilité 29 en stock, succursale Matco St-Léonard servie par défaut. Le même jour, RONA affichait 49,99 $ pour le même produit, soit deux cents d'écart.
+
+La page n'affiche ni prix régulier barré ni date de fin, alors que la circulaire BMR du 3 au 9 septembre annonçait un rabais de 30 % sur la gamme SICO Spécialité à 49,97 $. Caractéristique confirmée sur deux produits BMR : le site affiche le prix courant SANS jamais l'étiqueter comme promotionnel.
+
+Conséquence de collecte : chez BMR, une promotion ne se lit pas dans une étiquette, elle se lit dans la variation entre deux relevés. Un prix qui baisse signale une promotion qui commence, un prix qui remonte signale une promotion qui se termine. La régularité stricte du rythme hebdomadaire est donc indispensable pour cette bannière, sans quoi aucune pression promotionnelle n'est observable.
+
+Réserve de modèle d'affaires : les marchands affiliés indépendants fixent leurs propres prix en succursale; le prix en ligne est une référence unique et non le prix pratiqué partout."
+"BMR — presse indépendante (La Presse)","Secondaire","Moyen","Firecrawl","Hebdomadaire","","https://www.lapresse.ca/recherche?q=%22Groupe+BMR%22&p=1&s=date","Recherche par expression exacte dans le moteur interne de La Presse, triée par date. Adresse vérifiée stable en onglet neuf le 8 septembre 2026. Environ 57 résultats.
+
+C'est la requête qui a le mieux performé des quatre bannières lors des tests du 8 septembre 2026 : son résultat le plus récent, « Guerre des prix dans les quincailleries » du 26 février 2026, touche directement la KIQ centrale.
+
+Regard indépendant des enseignes, seule voie du dispositif pour observer une contraction ou une difficulté que BMR n'annoncerait pas.
+
+BIAIS À SURVEILLER : même une expression exacte produit des faux positifs. L'article « Changer de nom pour ses 100 ans » du 9 septembre 2024 contient bien l'expression « Groupe BMR », mais porte en réalité sur le changement de nom de Sollio Groupe coopératif, BMR n'y étant mentionné qu'une fois en passant. Un contrôle humain du contenu, et pas seulement du titre, est obligatoire avant de créer une fiche.
+
+Risque inverse : un article qui écrit « BMR » sans jamais écrire « Groupe BMR » sera exclu par cette requête. Conception à réviser à la première collecte réelle.
+
+Limites techniques : aucun flux RSS, aucun filtre par année, le tri s=date est le seul mécanisme temporel."
+"BMR — promotions et soldes","Primaire","Fiable","Firecrawl","Hebdomadaire","","https://www.bmr.ca/fr/promotions/soldes.html","Page de promotions du site marchand BMR. Vérifiée le 6 septembre 2026 : rend 21 produits avec nom, marque, prix promotionnel, prix régulier et rabais exprimé en dollars ou en pourcentage. Alimente les indicateurs part de voix promotionnelle, profondeur du rabais et largeur de l'assortiment.
+
+Biais majeur à ne jamais omettre : cette page n'est PAS la circulaire. Elle en montre un sous-ensemble orienté vers les produits vendables en ligne, majoritairement agriculture, éclairage et raticides lors du test. Mesurer la largeur de l'assortiment promotionnel sur cette seule base sous-estime fortement la pression promotionnelle réelle de BMR. Source complémentaire à la circulaire, jamais un remplacement.
+
+Un message d'erreur est apparu en pied de rendu lors du test, signe d'un chargement possiblement partiel : vérifier le nombre de produits à chaque collecte et le consigner au Journal."
+"BMR — sacs à déchets Maximum (panier fixe)","Primaire","Fiable","Firecrawl","Hebdomadaire","","https://www.bmr.ca/fr/maximum-sac-a-ordure-entrepreneur-3-mil-noir-32-pqt-001-9971.html","Page produit officielle BMR. Code 001-9971, identique à celui cité dans la circulaire du 3 au 9 septembre 2026 : article repère du panier fixe confirmé. Sac à ordure Entrepreneur MAXIMUM, 3 mil, noir, 32 par paquet.
+
+Vérifié le 8 septembre 2026 en visiteur anonyme : prix 16,97 $, soit exactement le prix promotionnel de la circulaire. Contrairement à la page des sacs RONA, le rabais de la circulaire se reflète bien en ligne chez BMR.
+
+Limite importante : la page n'affiche NI prix régulier barré NI date de fin de promotion. La profondeur et la durée du rabais ne sont donc pas lisibles depuis cette page; elles exigent la circulaire, qui indique un prix suggéré de 21,98 $ et un rabais de 22 %. C'est l'inverse de la page peinture SICO de RONA, qui livre prix courant, prix régulier et date de fin.
+
+Succursale servie par défaut : Matco St-Léonard, Montréal, sans sélecteur visible pour l'utilisateur. Même succursale que celle servie par défaut sur la circulaire BMR.
+
+Disponibilité horodatée sur la page : « 275 en stock en magasin, mis à jour le 8 septembre à 3:00 ».
+
+Réserve de modèle d'affaires : une large part des 275 succursales BMR sont des marchands affiliés indépendants qui fixent leurs propres prix en magasin. La circulaire elle-même parle de « prix suggéré ». Le prix en ligne est donc une référence unique et non le prix pratiqué dans toutes les succursales."
+"Canac — aubaines et promotions","Primaire","Fiable","Firecrawl","Hebdomadaire","","https://www.canac.ca/canac/fr/2/c/AUB","Page Aubaines de Canac, vérifiée le 8 septembre 2026, lue sans résistance par Firecrawl. Prix promotionnel et prix régulier affichés côte à côte, ce qui rend la profondeur du rabais mesurable produit par produit. Aucune date de fin de promotion : la durée n'est pas mesurable ici.
+
+PIÈGE MAJEUR à respecter : les 1847 articles de la section Aubaines mélangent trois types de mises en avant, étiquetées « En circulaire », « Liquidation » et « Spécial ». La liquidation est de l'écoulement de stock, pas de la pression promotionnelle. Pour l'indicateur de largeur de l'assortiment, ne compter QUE les articles étiquetés « En circulaire », jamais le total des aubaines, sous peine de gonfler artificiellement la mesure.
+
+Ces étiquettes alimentent aussi l'indicateur de forme du levier promotionnel, Canac nommant lui-même la nature de chaque mise en avant.
+
+Réserve technique : le robot ne lit que « 50 produits affichés » par requête, avec pagination, alors qu'un utilisateur voit un total de 1847. Compter la largeur exigera une pagination ou un paramètre de taille de page, à tester à l'étape 6.
+
+Magasin /2/, L'Ancienne-Lorette, cohérent avec les trois autres sources Canac de la base."
+"Canac — blogue (tient lieu de salle de presse)","Primaire","Fiable","Firecrawl","Hebdomadaire","","https://www.canac.ca/canac/fr/2/blog?filter=NEWS&page=1","Blogue officiel de Canac : ne publie que les annonces favorables à son image; les fermetures, difficultés ou reculs n'y sont généralement pas annoncés.
+
+Vérifié le 8 septembre 2026 : le blogue comporte un filtre NEWS qui isole la section corporative, 2 éléments contre 77 sans filtre, les deux étant des ouvertures de succursale. Les dates sont affichées au mois près, jamais au jour. Rythme de publication d'environ deux nouvelles par an : la source sera muette la plupart du temps, son intérêt tient à sa spécificité et non à son volume. L'identifiant de succursale dans l'adresse n'influence pas le contenu, vérifié en comparant /2/ et /39/."
+"Canac — campagne de recrutement","Primaire","Fiable","Firecrawl","Hebdomadaire","","https://carrieres.canac.ca/","Page d'accueil du site carrières de Canac. Vérifiée le 6 septembre 2026 : porte un bandeau de campagne daté, « Nous embauchons dans nos 31 succursales jusqu'au 26 septembre », que la page des offres d'emploi n'affiche pas.
+
+Complète la source « Canac — page carrières » sans la remplacer : celle-ci donne le volume de postes, celle-là donne les annonces de campagne datées et le nombre de succursales déclaré.
+
+Biais : communication d'employeur destinée au recrutement. Le nombre de succursales annoncé est déclaratif et n'a pas été vérifié contre le localisateur de magasins. Une campagne annoncée ne confirme aucune embauche réalisée."
+"Canac — localisateur de succursales","Primaire","Fiable","Firecrawl","Hebdomadaire","","https://www.canac.ca/canac/fr/2/store-finder","Localisateur officiel des succursales Canac. Sert de terme d'implantation à croiser avec le filtre région du portail d'emploi.
+
+Vérifié le 8 septembre 2026 : lu sans difficulté par Firecrawl. La liste est groupée sous 11 régions administratives affichées en en-tête : Capitale-Nationale, Chaudière-Appalaches, Centre-du-Québec, Mauricie, Estrie, Laval, Montérégie, Laurentides, Lanaudière, Saguenay, Bas-Saint-Laurent. Cette structure la rend directement comparable au filtre région du portail d'emploi, ce qu'aucun autre localisateur ne permet.
+
+ÉCART À VÉRIFIER, NON CONCLUANT : la région Montréal figure dans le filtre du portail d'emploi mais PAS parmi les régions d'implantation du localisateur. C'est le motif exact que l'indicateur cherche, un poste dans une région sans succursale. Mais Canac n'a pas de magasin à Montréal même, sa succursale de Laval servant de représentante du marché montréalais par décision d'équipe. Un poste étiqueté Montréal peut donc désigner un magasin de Laval ou de la Montérégie. À vérifier avant d'en faire un signal.
+
+ÉCART À EXPLIQUER : 37 succursales comptées par l'équipe le 8 septembre 2026, contre 31 annoncées sur la page carrières le 6 septembre 2026. Six d'écart, dans le sens de la croissance.
+
+Avertissement technique : un comptage automatisé a rendu 78 entrées, soit pratiquement le double de 37. Le rendu duplique probablement chaque magasin. Ne pas se fier au dénombrement automatique sans contrôle humain."
+"Canac — page carrières","Primaire","Fiable","Firecrawl","Hebdomadaire","","https://carrieres.canac.ca/offres-emplois/?regions=&categories=&types=&succursales=","Page carrières officielle de Canac : surreprésente les régions et postes en expansion; un poste affiché ne confirme pas une embauche réalisée, et les postes saisonniers de plancher peuvent s'y mêler aux postes permanents de gestion ou de logistique.
+
+Règle de comparaison adoptée par l'équipe le 8 septembre 2026 : on compare la variation de chaque bannière par rapport à elle-même entre deux relevés à date comparable, jamais les niveaux absolus entre bannières.
+
+Portail vérifié le 8 septembre 2026 : réseau exploité en propre, sans marchands affiliés, donc le portail reflète l'ensemble du réseau. Liste entièrement rendue sans pagination. Aucune date d'affichage n'est publiée. La liste comporte des intitulés répétés pour une même succursale, qui correspondent vraisemblablement à plusieurs postes à pourvoir.
+
+CORRECTION DU 9 SEPTEMBRE 2026 : l'affirmation « aucun compteur n'est imprimé sur la page » est INVALIDÉE. La première collecte automatisée a relevé la mention « Offres d'emploi actuelles 116 ». Un compteur existe bel et bien. Il devient la valeur de référence; le dénombrement de la liste reste utile comme contrôle croisé.
+
+Référence au 8 septembre 2026 : le filtre Région propose 12 régions administratives (Bas-Saint-Laurent, Centre-du-Québec, Chaudière-Appalaches, Estrie, Lanaudière, Laurentides, Laval, Mauricie, Montérégie, Montréal, Capitale-Nationale, Saguenay). Absentes : Outaouais, Abitibi-Témiscamingue, Côte-Nord, Gaspésie et Îles-de-la-Madeleine, Nord-du-Québec.
+
+Point méthodologique confirmé le 8 septembre 2026 : ce filtre reflète les régions où des postes sont ouverts, et non les régions d'implantation. Pour lire un signal d'implantation, croiser cette liste avec le localisateur de succursales : un poste affiché dans une région où Canac n'exploite aucune succursale constitue le signal fort. Croisement du 9 septembre 2026 : aucun écart, les 12 régions d'embauche couvrent les 11 régions d'implantation."
+"Canac — peinture Prima (panier fixe)","Primaire","Fiable","Firecrawl","Hebdomadaire","","https://www.canac.ca/canac/fr/2/p/peinture-au-latex-d-interieur-prima-mat-blanc-ultime-3-78-l/5011600","Page produit officielle : prix courant affiché pour le magasin sélectionné par défaut sur le site (L'Ancienne-Lorette); peut varier par succursale ailleurs dans la province."
+"Canac — presse indépendante (La Presse)","Secondaire","Moyen","Firecrawl","Hebdomadaire","","https://www.lapresse.ca/recherche?q=%22quincaillerie+Canac%22&p=1&s=date","Recherche par expression exacte dans le moteur interne de La Presse, triée par date. Adresse vérifiée stable en onglet neuf le 8 septembre 2026. Environ 11 résultats, le plus récent datant du 18 novembre 2024.
+
+SOURCE CRITIQUE MALGRÉ SON FAIBLE VOLUME : c'est la SEULE source indépendante dont dispose le dispositif pour Canac. Vérification du 8 septembre 2026 : Canac n'a de profil sur aucun fil de communiqués, ni newswire.ca, ni GlobeNewswire, ni Business Wire. Les seules mentions y sont émises par des tiers, un fournisseur de chariots élévateurs et un intégrateur informatique. Et sa salle de presse maison se réduit à deux nouvelles par an. Canac est de loin l'enseigne la plus opaque des quatre, ce qui constitue en soi un constat de veille pour le mandat.
+
+BIAIS : la requête brute « Canac » rend environ 135 résultats mais son premier résultat ne concerne pas l'enseigne, confirmant un bruit important. L'expression exacte « quincaillerie Canac » réduit le bruit mais exclut tout article qui écrirait simplement « Canac ». Conception à réviser à la première collecte réelle si le rendement reste nul.
+
+Limites techniques : aucun flux RSS, aucun filtre par année, tri s=date seul mécanisme temporel."
+"Canac — sacs à déchets Green Home (panier fixe)","Primaire","Fiable","Firecrawl","Hebdomadaire","","https://www.canac.ca/canac/fr/2/p/sacs-a-dechets-ultra-resistants-green-home-noir-33-po-x-48-po-pqt32/11004780","Page produit officielle : prix courant affiché pour le magasin sélectionné par défaut sur le site (L'Ancienne-Lorette); peut varier par succursale ailleurs dans la province."
+"Home Depot — localisateur de succursales","Primaire","Fiable","Firecrawl","Hebdomadaire","","https://stores.homedepot.ca/qc/","Répertoire officiel des magasins Home Depot pour le Québec. Sert de terme d'implantation à croiser avec le filtre de villes du portail d'emploi.
+
+Vérifié le 8 septembre 2026 : lu sans difficulté par Firecrawl, contrairement à toutes les autres pages Home Depot du dispositif. Fil d'Ariane « Home Depot Locations in Quebec ».
+
+Limite structurelle : la page liste 20 VILLES et non des magasins. Le détail de chaque succursale exige d'ouvrir la page-ville correspondante, soit 22 succursales au total pour le Québec selon le comptage de l'équipe. La collecte se fait donc en deux temps. Aucun compteur n'est affiché. La page est servie en anglais malgré le segment /qc/.
+
+Villes listées au 8 septembre 2026 : Anjou, Boisbriand, Gatineau, Granby, Greenfield Park, Lachenaie, Laval, Lévis, Montréal, Pointe-Claire, Québec, Saint-Bruno-de-Montarville, Saint-Constant, Saint-Jean-sur-Richelieu, Saint-Jérôme, Sainte-Foy, Sherbrooke, Trois-Rivières, Vaudreuil-Dorion, Victoriaville.
+
+DÉFAUT RÉVÉLÉ PAR LE CROISEMENT : cette liste de 20 villes ne coïncide pas avec les 19 villes énumérées dans l'adresse de la source « Home Depot — page carrières ». Pointe-Claire et Saint-Jean-sur-Richelieu manquent à cette dernière, tandis que St Laurent y figure sans apparaître ici. Un poste affiché à Pointe-Claire ou à Saint-Jean-sur-Richelieu ne serait donc jamais compté, sans erreur visible. À corriger à l'étape 6 en cherchant un filtre au niveau de la province, ou à défaut en revérifiant la liste des villes à chaque collecte."
+"Home Depot — page carrières","Primaire","Fiable","Firecrawl","Hebdomadaire","","https://careers.homedepot.ca/fr/emplois?location=%5B%22QC%20-%20Anjou%22%2C%22QC%20-%20Boisbriand%22%2C%22QC%20-%20Gatineau%22%2C%22QC%20-%20Granby%22%2C%22QC%20-%20Greenfield%20Park%22%2C%22QC%20-%20Lachenaie%22%2C%22QC%20-%20Laval%22%2C%22QC%20-%20Montreal%22%2C%22QC%20-%20Quebec%20City%22%2C%22QC%20-%20Sherbrooke%22%2C%22QC%20-%20St%20Laurent%22%2C%22QC%20-%20St.%20Bruno%20de%20Montarville%22%2C%22QC%20-%20St.%20Constant%22%2C%22QC%20-%20St.Jerome%22%2C%22QC%20-%20Ste-Foy%22%2C%22QC%20-%20Trois%20Rivieres%22%2C%22QC%20-%20Vaudreuil%22%2C%22QC%20-%20Victoriaville%22%5D","Page carrières officielle de Home Depot, hébergée sur un domaine distinct (careers.homedepot.ca) : surreprésente les régions et postes en expansion; un poste affiché ne confirme pas une embauche réalisée, et peut inclure des postes hors Québec si aucun filtre régional n'est appliqué.
+
+Règle de comparaison adoptée par l'équipe le 8 septembre 2026 : les volumes d'affichages ne se comparent pas en niveau absolu d'une bannière à l'autre. On compare la variation de chaque bannière par rapport à elle-même entre deux relevés à date comparable.
+
+La sélection du Québec ne s'obtient pas par un filtre de province mais par une énumération explicite de villes dans l'adresse. Les postes de plancher en magasin sont bien inclus. Aucune date d'affichage n'est publiée.
+
+CORRECTION DU 9 SEPTEMBRE 2026 : la fragilité annoncée s'est matérialisée dès la première collecte automatisée. Le portail a répondu « 18 Selected » alors que l'adresse en demandait 19 : une ville était écartée EN SILENCE, sans erreur ni avertissement. L'adresse a été ramenée à 18 villes le 9 septembre 2026 par retrait de « QC - Levis », afin que la demande corresponde à ce que le portail accepte réellement.
+
+À REVÉRIFIER : Lévis figure pourtant au localisateur de succursales de Home Depot. L'intitulé de cette ville diffère peut-être dans le portail d'emploi, ou aucun poste n'y est ouvert. Si des postes y apparaissent sous un autre libellé, ils ne seraient pas comptés.
+
+Compteur relevé le 9 septembre 2026 : « Nous avons trouvé 121 emplois ». Ce chiffre est le point zéro québécois. Les 479 postes cités dans une fiche du 6 septembre 2026 étaient un total canadien et ne sont pas comparables."
+"Home Depot — presse indépendante (La Presse)","Secondaire","Moyen","Firecrawl","Hebdomadaire","","https://www.lapresse.ca/recherche?q=%22Home+Depot+Canada%22&p=1&s=date","Recherche par expression exacte dans le moteur interne de La Presse, triée par date. Adresse vérifiée stable en onglet neuf le 8 septembre 2026. Environ 22 résultats, le plus récent datant du 14 avril 2025.
+
+Seule source indépendante du dispositif pour Home Depot. Sa salle de presse maison et son profil Cision ne publient que du contenu de fondation, d'embauche saisonnière et de rapport ESG, sans aucune annonce d'ouverture, de fermeture, d'agrandissement ou d'acquisition, vérifié le 8 septembre 2026. Le profil Cision de Home Depot Canada a d'ailleurs été écarté du dispositif pour redondance avec la page relations médias, à rendement nul.
+
+Rendement attendu faible : la couverture de La Presse sur cette enseigne est mince et ancienne. La mention la plus proche d'un signal de contraction, « COVID-19, fermetures chez de grandes chaînes au Canada » du 18 mars 2020, concerne des fermetures temporaires de pandémie touchant plusieurs chaînes, pas une fermeture définitive de succursale Home Depot.
+
+BIAIS : l'expression exacte « Home Depot Canada » exclut tout article qui écrirait simplement « Home Depot ». Conception à réviser à la première collecte réelle.
+
+Limites techniques : aucun flux RSS, aucun filtre par année, tri s=date seul mécanisme temporel."
+"Home Depot — relations médias (tient lieu de salle de presse)","Primaire","Fiable","Firecrawl","Hebdomadaire","","https://www.homedepot.ca/fr/accueil/information-sur-l-entreprise/relations-avec-les-medias.html","Page de relations médias officielle de Home Depot : ne publie que les annonces favorables à son image; les fermetures, difficultés ou reculs n'y sont généralement pas annoncés.
+
+Vérifié le 8 septembre 2026 : la page liste n'affiche aucune date, mais chaque communiqué en porte une sur sa propre page, par exemple « le 12 juin 2025 ». La collecte se fait donc en deux temps, liste puis communiqué. Les adresses sont rangées par année (/2025/, /2026/), ce qui permet de ne rouvrir que les communiqués de l'année en cours. Contenu majoritairement consacré à la Fondation et à des annonces hors Québec; les annonces d'ouverture de magasin y figurent toutefois, ce qui justifie de conserver la source malgré son faible rendement québécois."
+"Home Depot — sacs à déchets Husky (panier fixe)","Primaire","Fiable","Firecrawl","Hebdomadaire","","https://www.homedepot.ca/product/husky-contractor-clean-up-bags-158-l-capacity-32-count-/1000449142","Page produit officielle Home Depot, UGS 1000449142.
+
+Vérifié les 7 et 8 septembre 2026 : la succursale ne peut pas être fixée par l'adresse, elle dépend d'un témoin de navigateur. Un relevé automatisé mesure donc ce qui est servi à un visiteur non localisé, et non le prix de Beaubien Ouest. Un prix par défaut de 26,98 $ avait été rendu le 7 septembre 2026.
+
+CORRECTION DU 9 SEPTEMBRE 2026 : l'hypothèse d'un prix par défaut constant et reproductible est INVALIDÉE. Lors de la première collecte automatisée, la page n'a rendu AUCUN prix affiché; seule la valeur structurée 26,98 CAD était présente, et le magasin servi était Niagara Falls, en Ontario. Le comportement de cette page est donc instable d'une requête à l'autre.
+
+RÈGLE DE COLLECTE RÉVISÉE : relever le prix affiché s'il existe. S'il est absent, consigner l'échec au Journal et effectuer un relevé manuel de secours avec une succursale québécoise confirmée. Ne jamais substituer silencieusement la valeur structurée au prix affiché : si elle est utilisée, la nommer comme telle dans la fiche."
+"RONA — fil de communiqués Cision","Secondaire","Moyen","Firecrawl","Hebdomadaire","","https://www.newswire.ca/fr/news/rona-inc/","Profil d'organisation RONA inc. sur newswire.ca, exploité par Cision, anciennement Groupe CNW. Vérifié le 8 septembre 2026 : 25 communiqués datés, en français, lus sans difficulté par Firecrawl.
+
+Apport par rapport à la salle de presse maison : le fil publie des annonces d'expansion que ronainc.ca ne relaie pas toujours, par exemple « RONA+ EXPANDS ITS PRESENCE IN QUÉBEC » du 12 décembre 2024 et « 15 NEW STORES NOW DISPLAYING THE COLOURS OF RONA+ » du 14 mai 2025.
+
+Biais de sélection identique à celui d'une salle de presse : un fil de communiqués ne diffuse que ce que l'entreprise choisit de publier. Il ne lève donc PAS l'angle mort des fermetures. Sa valeur est la complétude, pas la détection des reculs.
+
+Limites techniques vérifiées le 8 septembre 2026 : aucun flux RSS, aucun filtre par date reflété dans l'adresse. Le widget de saut par date ne modifie pas l'URL. Les communiqués étant triés du plus récent au plus ancien, la page 1 suffit à une collecte bimensuelle."
+"RONA — page carrières","Primaire","Fiable","Firecrawl","Hebdomadaire","","https://carrieres.ronainc.ca/?province=qu%C3%A9bec","Page carrières officielle de RONA : surreprésente les régions et postes en expansion; un poste affiché ne confirme pas une embauche réalisée, et les postes saisonniers de plancher peuvent s'y mêler aux postes permanents de gestion ou de logistique.
+
+Règle de comparaison adoptée par l'équipe le 8 septembre 2026 : les volumes d'affichages ne se comparent pas en niveau absolu d'une bannière à l'autre, parce que les modèles d'affaires et les périmètres de portail diffèrent. On compare la variation de chaque bannière par rapport à elle-même entre deux relevés à date comparable.
+
+Portail vérifié le 8 septembre 2026 : couvre les quatre bannières de RONA inc. (RONA+, RONA, Réno-Dépôt, Dick's Lumber) sans distinction visible dans la liste des postes. Aucune date d'affichage n'est publiée; l'ancrage temporel repose donc sur la date de captation."
+"RONA — peinture SICO Spécialité 3,78 L (panier fixe)","Primaire","Fiable","Firecrawl","Hebdomadaire","","https://www.rona.ca/fr/produit/peinture-dinterieur-pour-cuisine-et-salle-de-bain-sico-latex-fini-lustre-doux-blanc-pur-3-78-l-50316842","Page produit officielle RONA. Code 50316842, identique à celui cité dans la circulaire du 3 au 9 septembre 2026 : article repère du panier fixe confirmé. MPN 163-550-3.78L, fini lustre doux, blanc pur, 3,78 L.
+
+Vérifié le 8 septembre 2026 en visiteur anonyme : prix courant 49,99 $, prix régulier barré 71,49 $, mention verbatim « Rabais de 21,50 $ jusqu'au 9 sept. 2026 », disponibilité « 265 en magasin ». Prix affiché, prix barré et donnée structurée concordent tous à 49,99 $, et concordent avec ce que voit un utilisateur avec succursale confirmée.
+
+Intérêt particulier de cette source : elle livre la DATE DE FIN de la promotion, ce qui alimente la durée des mises en avant, second terme de l'indicateur de part de voix promotionnelle.
+
+Réserve de comparabilité à assumer par écrit dans le mandat : le panier compare des peintures de finis différents selon les bannières, lustre doux chez RONA, mat chez Canac, semi-brillant chez Home Depot. Le fini influence le prix; la substitution est autorisée par la règle du 6 septembre 2026 mais ne doit pas être présentée comme une comparaison de produits identiques.
+
+CORRECTION DU 9 SEPTEMBRE 2026, IMPORTANTE : lors de la première collecte automatisée, la page a été servie depuis « Fort Erie RONA », en ONTARIO. La succursale servie ne se limite donc pas au réseau québécois comme le supposait la note précédente, et aucun paramètre d'adresse ne la fixe sur une page produit. Le prix relevé le 9 septembre 2026 ne provient pas d'une succursale québécoise.
+
+RÈGLE DE COLLECTE RÉVISÉE : la succursale servie doit être relevée et consignée à CHAQUE collecte. Tout relevé servi depuis une succursale hors Québec est signalé au Journal et écarté de la comparaison d'écart de prix, car il mesure un autre marché."
+"RONA — presse indépendante (La Presse)","Secondaire","Moyen","Firecrawl","Hebdomadaire","","https://www.lapresse.ca/recherche?q=RONA&p=1&s=date","Recherche dans le moteur interne de La Presse, triée du plus récent au plus ancien par le paramètre s=date. Adresse vérifiée stable en onglet neuf le 8 septembre 2026.
+
+POURQUOI CETTE SOURCE EST NÉCESSAIRE : c'est le premier regard du dispositif qui n'appartient pas aux enseignes. La Presse a publié « RONA, 180 postes supprimés au Québec » le 23 janvier 2024, « Rona supprime 200 postes au siège social de Boucherville » le 15 juin 2023, « Réno-Dépôt n'est plus, place à RONA+ » le 11 octobre 2024, et « RONA, vers une stratégie de baisse de prix? » le 12 février 2024. Aucune salle de presse maison ne publiera jamais ce type d'information.
+
+CORRECTION DU 9 SEPTEMBRE 2026 : LA REQUÊTE EST INOPÉRANTE EN L'ÉTAT. La première collecte automatisée a rendu « Environ 2 103 résultats » dont AUCUN des dix premiers ne porte sur l'enseigne RONA. L'hypothèse selon laquelle le tri par date suffirait à absorber le bruit de l'homonyme une personnalité politique homonyme et des correspondances partielles est démentie.
+
+TANT QUE LA REQUÊTE N'EST PAS CORRIGÉE, CETTE SOURCE NE DOIT PRODUIRE AUCUNE FICHE.
+
+Pistes à tester avant le prochain cycle : une expression exacte moins étroite que « RONA inc. », qui ne rendait que 15 résultats dont le plus récent datait de 2021; le mot RONA associé à un second terme discriminant; ou une recherche restreinte à la section Affaires du site.
+
+Limites techniques vérifiées : aucun flux RSS sur lapresse.ca, aucun filtre par année ou par plage de dates, le tri s=date est le seul mécanisme temporel disponible."
+"RONA — promotions de la semaine","Primaire","Fiable","Firecrawl","Hebdomadaire","","https://www.rona.ca/webapp/wcs/stores/servlet/RonaPromoFlyerView?navDescriptors=&catalogId=10051&storeId=10151&langId=-2&pageSize=infinite&content=PromoFlyer&page=1","Vue « circulaire en ligne » de RONA, rendue sous forme de liste de produits lisible par un robot, contrairement au visualiseur de la circulaire qui reste hors de portée. Vérifiée le 8 septembre 2026.
+
+Point fort : l'adresse contient storeId=10151, ce qui permet de FIGER LA SUCCURSALE DE RÉFÉRENCE dans l'URL. Home Depot n'offre pas cette possibilité. Magasin servi : RONA+ Galeries d'Anjou.
+
+Ce que la source sert : la profondeur du rabais, grâce aux prix barrés et aux mentions du type « Rabais de 69 $ »; et la forme du levier promotionnel, un produit affichant par exemple « OUTIL GRATUIT » à prix inchangé de 279 $, soit une prime à l'achat et non un rabais. Aucune autre source du dispositif ne donne la forme du levier.
+
+Ce qu'elle ne sert PAS : la largeur de l'assortiment promotionnel. Les compteurs par catégorie, 791 en Outils, 3190 en Extérieur et jardin, 213 en Électroménagers, 443 en Matériaux, comptent le catalogue complet de la catégorie et non les articles en rabais. Confirmé par l'équipe le 8 septembre 2026. De plus, malgré pageSize=infinite, seuls 24 produits sont rendus par requête : mesurer la largeur exigera une pagination, à concevoir à l'étape 6.
+
+Risque technique : cette page a exigé un proxy furtif, alors que toutes les autres sources du dispositif ont cédé au premier essai. Signe qu'elle résiste aux robots. Fiabilité à revérifier au deuxième cycle de collecte et à consigner au Journal si elle échoue."
+"RONA — sacs à déchets Maximum (panier fixe)","Primaire","Fiable","Firecrawl","Hebdomadaire","","https://www.rona.ca/fr/produit/sacs-a-dechets-ultra-resistant-pour-entrepreneur-maximum-3-mil-plastique-noir-159-l-33-po-x-48-po-32-boite-33483-0028029","Page produit officielle RONA. Code produit 0028029, identique à celui cité dans la circulaire du 3 au 9 septembre 2026 : article repère du panier fixe confirmé. MPN 33483.
+
+Vérifié le 8 septembre 2026 : prix affiché 26,99 $ la boîte, identique pour un robot sans magasin confirmé et pour un utilisateur avec la succursale RONA+ Anjou confirmée. Le prix affiché ne dépend donc pas du magasin, ce qui rend cette source automatisable par Firecrawl, contrairement aux pages produits de Home Depot.
+
+La disponibilité, elle, dépend du magasin : un robot sans magasin lit « Cet article n'est pas offert pour le moment » alors qu'un utilisateur avec succursale confirmée voit le produit disponible. La disponibilité n'est donc PAS exploitable depuis une collecte automatisée.
+
+Anomalie à consigner, cause non établie : les données structurées de la page portent 14,99 $, soit exactement le prix promotionnel de la circulaire en cours, alors que la page affiche 26,99 $ à tous les visiteurs. Le rabais de la circulaire ne se reflète pas dans le prix en ligne. La collecte relève les deux valeurs et les nomme, sans jamais en choisir une silencieusement. Règle à fixer à l'étape 3.
+
+Piège de collecte : une autre page RONA décrit un produit très proche, sacs Maximum 33 x 48 po, 159 L, boîte de 32, sous le code 11195019, affiché à 40,99 $. Ce n'est pas le même article. Ne jamais confondre les deux lors des relevés."
+"RONA — salle de presse","Primaire","Fiable","Firecrawl","Hebdomadaire","","https://www.ronainc.ca/fr/nouvelles?year=2026","Communication officielle de RONA : ne publie que les annonces favorables à son image; les fermetures, difficultés ou reculs n'y sont généralement pas annoncés.
+
+Vérifié le 8 septembre 2026 : la page rend 20 nouvelles datées au jour près, avec pagination sur 2 pages pour 2026 et un filtre par année remontant à 2013. Les nouvelles étant triées du plus récent au plus ancien, la page 1 suffit à une collecte bimensuelle. Salle de presse nationale couvrant les quatre bannières de RONA inc. (RONA+, RONA, Réno-Dépôt, Dick's Lumber) : la grande majorité des annonces concernent l'extérieur du Québec, ce qui réduit fortement le rendement québécois de la source. Le paramètre year=2026 devra être mis à jour si le dispositif se poursuit après le 31 décembre 2026."
+"BMR — circulaire","Primaire","Fiable","Manuel","Hebdomadaire","","https://www.bmr.ca/fr/circulaire","Vitrine promotionnelle contrôlée par BMR : montre les produits et prix mis en avant à un moment donné, pas l'ensemble de l'assortiment ni les prix courants hors promotion."
+"BMR — localisateur de succursales","Primaire","Fiable","Manuel","Hebdomadaire","","https://www.bmr.ca/fr/storelocator/","Localisateur officiel des magasins BMR. Sert de terme d'implantation à croiser avec le filtre région du portail d'emploi : le signal d'expansion est un poste affiché dans une région où l'enseigne n'exploite aucune succursale.
+
+Vérifié le 8 septembre 2026 : un robot reçoit « Aucun magasin n'a été trouvé à partir de l'information fournie » et zéro magasin. La liste dépend d'une géolocalisation du visiteur, qu'un robot ne fournit pas. Connecteur Manuel en conséquence.
+
+Relevé humain du 8 septembre 2026 : compteur affiché « 238 magasins trouvés », dont 201 au Québec selon le comptage de l'équipe, le reste se répartissant entre l'Ontario, le Nouveau-Brunswick, la Nouvelle-Écosse et Saint-Pierre-et-Miquelon.
+
+ÉCART À EXPLIQUER : la page carrières de BMR annonce 275 succursales, le localisateur en compte 238. Trente-sept d'écart. L'un des deux chiffres est erroné, ou les deux ne comptent pas la même chose. À clarifier avant d'utiliser l'un ou l'autre comme référence.
+
+Limites : aucun filtre par province ou région, seulement un rayon de recherche en kilomètres. Les adresses portent la province mais aucune région administrative. Le tri se fait par distance, donc l'ordre de la liste varie selon la position détectée au moment de la consultation."
+"Canac — circulaire","Primaire","Fiable","Manuel","Hebdomadaire","","https://www.canac.ca/canac/fr/2/circulaire-reguliere","Vitrine promotionnelle contrôlée par Canac : montre les produits et prix mis en avant à un moment donné, pas l'ensemble de l'assortiment ni les prix courants hors promotion."
+"Home Depot — aubaines et promotions","Primaire","Fiable","Manuel","Hebdomadaire","","https://www.homedepot.ca/recherche?q=*&filter=6y5","Liste des articles en promotion de Home Depot. Vérifiée le 8 septembre 2026 : un utilisateur avec magasin confirmé voit 3 297 résultats, avec prix courants et prix réguliers barrés. Un robot sans magasin confirmé ne reçoit AUCUN produit, seulement le message « Veuillez confirmer votre magasin pour connaître la disponibilité du produit ou service » et le magasin par défaut NIAGARA FALLS, en Ontario.
+
+Troisième confirmation du même blocage chez Home Depot, après la circulaire et la page de peinture Behr. Le blocage est ici plus radical que sur les pages produits : la liste entière est vide, pas seulement le prix.
+
+Connecteur Manuel en conséquence : le relevé se limite au nombre total de résultats et, au besoin, aux premiers produits. Home Depot est la seule bannière dont la source de promotions est manuelle; cette asymétrie doit être déclarée dans le mandat et non masquée.
+
+Fragilité : le paramètre filter=6y5 est un identifiant interne de facette. S'il change lors d'une refonte du site, la page renverra un résultat différent sans erreur visible, comme la liste des 19 villes du portail carrières. À revérifier à chaque révision du mandat.
+
+Piste à tester à l'étape 6 : un profil de navigateur persistant dans Firecrawl, qui conserverait le témoin de magasin d'une collecte à l'autre. S'il fonctionne sur homedepot.ca, il ferait basculer d'un seul coup cette source, la circulaire et la peinture Behr en collecte automatisée. Jamais testé sur ce site à ce jour."
+"Home Depot — circulaire","Primaire","Fiable","Manuel","Hebdomadaire","","https://www.homedepot.ca/circulaire","Vitrine promotionnelle contrôlée par Home Depot : montre les produits et prix mis en avant à un moment donné, pas l'ensemble de l'assortiment ni les prix courants hors promotion.
+
+Vérifié les 7 et 8 septembre 2026 : le choix d'une succursale n'est pas inscrit dans l'adresse mais dans un témoin de navigateur; en navigation privée le site redemande le magasin. Un robot reçoit donc toujours le magasin par défaut, NIAGARA FALLS en Ontario, et la page lui est servie en anglais. Combiné au fait que le contenu de la circulaire est chargé dans un visualiseur de publication hors du HTML, cela confirme la collecte manuelle avec sélection préalable d'une succursale québécoise."
+"Home Depot — peinture Behr Marquee (panier fixe)","Primaire","Fiable","Manuel","Hebdomadaire","","https://www.homedepot.ca/product/behr-marquee-interior-semi-gloss-enamel-paint-primer-in-ultra-pure-white-3-79l/1000787191","Page produit officielle : prix courant affiché pour le magasin sélectionné par défaut sur le site (Beaubien Ouest); peut varier par succursale ailleurs dans la province.
+
+Vérifié les 7 et 8 septembre 2026 : la succursale ne peut pas être fixée par l'adresse, elle dépend d'un témoin de navigateur. Contrairement à la page des sacs Husky, cette page ne rend AUCUN prix à un visiteur non localisé : la fiche technique, le format 3,79 L et les avis se chargent, mais le prix est absent et la page affiche « Please confirm your store for product and service availability », en anglais, avec le magasin de Niagara Falls. Deux tests indépendants le confirment. Le comportement dépend donc du produit et non du site : d'autres pages de peinture Behr rendent un prix en visiteur anonyme, vérifié le 8 septembre 2026 sur la Behr Pro i100 18,96 L à 131,20 $.
+
+Deux options pour le relevé de cette UGS, à trancher à l'étape 3 : relevé manuel hebdomadaire, ou profil de navigateur persistant à tester à l'étape 6. Le choix du produit substitut reste ouvert : candidats identifiés le 8 septembre 2026, BEHR MARQUEE 3,79 L (actuel, UGS 1000787191), BEHR PREMIUM pour métal 3,43 L (UGS 1001341426), BEHR PRO i100 18,96 L (UGS 1000687097, écarté pour son format)."
+"RONA — circulaire","Primaire","Fiable","Manuel","Hebdomadaire","","https://www.rona.ca/fr/circulaire","Vitrine promotionnelle contrôlée par RONA : montre les produits et prix mis en avant à un moment donné, pas l'ensemble de l'assortiment ni les prix courants hors promotion."

@@ -1,0 +1,26 @@
+# Secrets et configuration locale : ne jamais versionner
+.env
+.env.*
+*.pem
+*.key
+*.p12
+secrets/
+credentials*
+*token*
+*apikey*
+mcp.json
+.claude/
+.claude.json*
+
+# Exports de la base (données privées)
+exports/
+*.airtable.csv
+data_privee/
+
+# Système et éditeurs
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+.idea/
+node_modules/

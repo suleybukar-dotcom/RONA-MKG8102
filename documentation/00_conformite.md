@@ -18,19 +18,19 @@ Les consignes détaillées de l'évaluation 2 (page Moodle, grille de correction
 | # | Exigence | Statut de l'exigence | Source | Fichier du dépôt | État |
 |---|---|---|---|---|---|
 | 1 | Dépôt GitHub d'équipe remis le 21 sept. 2026, 23 h 59 | Exigé | PC, J1 | Ce dépôt | Dépôt créé ; remise à confirmer |
-| 2 | SKILL.md d'équipe | Exigé | J1, PC | [SKILL.md](../SKILL.md) | Présent (v2 proposée, à valider par l'équipe) |
-| 3 | Skill v2 et historique des versions | Exigé | J2 (diap. 41), L 9.2 | [SKILL.md](../SKILL.md), [skills/historique/](../skills/historique/) | Présent ; **v2 non encore réexécutée sur le jeu de test** |
+| 2 | SKILL.md d'équipe | Exigé | J1, PC | [SKILL.md](../SKILL.md) | Présent, **validé par l'équipe** |
+| 3 | Skill (« v2 » dans le cours) et historique des versions | Exigé | J2 (diap. 41), L 9.2 | [SKILL.md](../SKILL.md), [skills/historique/](../skills/historique/) | Skill d'équipe validée et déclarée testée ; historique en place ; **le fichier ne porte pas de numéro de version** (le cours attend une « Skill v2 » : à préciser par l'équipe) ; une proposition de révision est jointe à titre optionnel |
 | 4 | KIQ et hypothèses | Exigé | L 9.2 | [01_kiq_et_hypotheses.md](01_kiq_et_hypotheses.md) | Couvert, vérifié contre la table KIQ |
 | 5 | Sources avec type, cote, connecteur, fréquence, biais connu | Exigé | J2, L 9.2 | [sources.csv](../configuration/sources.csv) | Couvert, 48 sources exportées de la base |
 | 6 | Schéma de la base | Exigé | J2, L 9.2 | [02_schema_airtable.md](02_schema_airtable.md) | Couvert, vérifié le 20 sept. |
-| 7 | Chaîne maillon par maillon, niveaux d'automatisation, points de contrôle | Exigé | J2, L 9.2 | [03_chaine_de_veille.md](03_chaine_de_veille.md), [workflows/](../workflows/) | Couvert ; mécanisme de planification non vérifié |
+| 7 | Chaîne maillon par maillon, niveaux d'automatisation, points de contrôle | Exigé | J2, L 9.2 | [03_chaine_de_veille.md](03_chaine_de_veille.md), [workflows/](../workflows/) | Couvert ; trois tâches planifiées actives (capture fournie par l'équipe) ; texte complet courant non relu |
 | 8 | Règles d'alerte et seuils | Exigé | J2, L 9.2 | [04_alertes_et_seuils.md](04_alertes_et_seuils.md) | Couvert (règles) ; détection automatique des seuils non démontrée |
 | 9 | Grille de confiance | Exigé | J2, L 9.2 | [05_grille_de_confiance.md](05_grille_de_confiance.md) | Couvert |
-| 10 | Jeu de test (3 à 5 pages difficiles avec fiche attendue) | Exigé | J2, L 9.2 | [jeu_de_test.md](../tests/jeu_de_test.md) | Défini (5 pages) ; **résultats de réexécution : aucun** |
+| 10 | Jeu de test (3 à 5 pages difficiles avec fiche attendue) | Exigé | J2, L 9.2 | [jeu_de_test.md](../tests/jeu_de_test.md) | Jeu de référence de 5 pages proposé ; **test déclaré conforme par l'équipe** ; jeu utilisé et résultats non versés : à verser |
 | 11 | Défaillances connues avec leur repli | Exigé | J2, L 9.2 | [06_defaillances_connues.md](06_defaillances_connues.md) | Couvert |
 | 12 | Aucune clé, jeton, mot de passe ni donnée personnelle | Exigé | J2 (diap. 4), L 9.2 | Ensemble du dépôt | Audit effectué avant chaque commit ; voir section 3 |
-| 13 | Usage de l'IA déclaré et tracé (niveau 4 pour la plateforme d'équipe) | Exigé | PC, J2 (diap. 4) | [07_declaration_usage_ia.md](07_declaration_usage_ia.md) | **Partiel : parties à compléter par l'équipe** |
-| 14 | Archivage des briefs (date, version, destinataires, fiches citées) et des alertes | Attendu | L 8.2 | [outputs/archive_briefs.md](../outputs/archive_briefs.md) | Registre créé, **aucune entrée vérifiée** |
+| 13 | Usage de l'IA déclaré et tracé (niveau 4 pour la plateforme d'équipe) | Exigé | PC, J2 (diap. 4) | [07_declaration_usage_ia.md](07_declaration_usage_ia.md) | Déclaration du mandat intégrée ; **à corriger : Perplexity est utilisé par le Responsable des insights mais la déclaration indique « aucun autre modèle »** ; traces des vérifications à compléter |
+| 14 | Archivage des briefs (date, version, destinataires, fiches citées) et des alertes | Attendu | L 8.2 | [outputs/archive_briefs.md](../outputs/archive_briefs.md) | Registre créé ; brief du 19 sept. archivé en version texte ; envoi non essayé |
 | 15 | Exemples de sorties réellement produites | Non exigé explicitement | Aucune | [outputs/](../outputs/) | Fourni à titre de preuve d'exécution |
 | 16 | README, structure en dossiers, .gitignore | Non exigé explicitement | Aucune (bonne pratique) | [README.md](../README.md) | Fournis |
 | 17 | Dépôt public | **Non confirmé** | Aucune exigence trouvée | Sans objet | Décision de l'équipe |
@@ -42,7 +42,7 @@ Les consignes détaillées de l'évaluation 2 (page Moodle, grille de correction
 - **Sans donnée personnelle** : aucun nom de membre, aucune adresse courriel, aucun identifiant de compte ; les rôles remplacent les noms.
 - **Sans identifiants Airtable** : identifiant de base, de tables, de vues et d'enregistrements retirés.
 - **Documents protégés** : les documents du cours (plan de cours, diapositives, gabarits) sont cités par leur titre et ne sont pas reproduits.
-- **Briefs** : non publiés (voir [archive_briefs.md](../outputs/archive_briefs.md)).
+- **Brief** : publié en version texte, sans noms ni identifiants de base ; la page d'origine (privée, à l'identité graphique de RONA) n'est pas reproduite.
 
 ## 4. Livrables individuels (hors de ce dépôt)
 

@@ -30,8 +30,8 @@ Contenu minimal proposé pour toute alerte (**proposition, à valider par l'équ
 |---|---|
 | Détection automatique des huit seuils | **Non démontrée** : aucune automatisation ni tâche consultée ne calcule ces seuils ; leur évaluation se fait à l'analyse |
 | Registre des alertes proposées (indicateur, seuil, heure, suite) | **Absent** : aucune table ni aucun fichier consultés ne le contiennent |
-| Brief BLUF | Un brief a été produit (version interactive et version PDF, puis une version graphique) ; **envoi non démontré** |
-| Envoi par Gmail | Test refusé lors de l'audit du 20 sept. ; **non vérifié** |
+| Brief BLUF | Brief « bi-hebdo » version 1 du 19 sept. 2026, archivé en version texte ; **envoi non essayé** |
+| Envoi par Gmail | Connexion testée le 5 sept. (déclaré) ; **envoi de briefs et réception d'alertes non essayés** |
 
 ## 4. Automatisations Airtable d'alerte interne
 

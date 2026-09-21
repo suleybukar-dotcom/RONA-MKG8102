@@ -1,6 +1,6 @@
 # Tâches planifiées de collecte : texte archivé du 9 septembre 2026
 
-> **Statut : archive, antérieure au mandat remis.** Ce texte est la version des instructions de tâches rédigée le 9 septembre 2026. Le mandat remis le 11 septembre déclare des cadences différentes (trois tâches hebdomadaires : lundi 8 h, mardi 9 h, mercredi 9 h, pour l'ensemble des 48 sources). Le **texte courant** des tâches planifiées, enregistré dans l'application Claude, n'a pas pu être consulté depuis l'environnement d'audit : **non vérifié**. À remplacer par le texte courant avant de considérer ce fichier comme la configuration en production.
+> **Statut : archive, antérieure au mandat remis.** Ce texte est la version des instructions de tâches rédigée le 9 septembre 2026. Le mandat remis le 11 septembre déclare des cadences différentes (trois tâches hebdomadaires : lundi 8 h, mardi 9 h, mercredi 9 h, pour l'ensemble des 48 sources). Trois tâches planifiées sont actives dans l'application Claude (capture d'écran fournie par l'équipe le 20 sept. 2026 : lundi 8 h, mardi 9 h, mercredi 9 h) et le début de leur texte correspond à ce fichier, mais leur **texte complet courant n'a pas été relu** : **non vérifié**. À remplacer par le texte courant avant de considérer ce fichier comme la configuration en production.
 >
 > Les règles de collecte, de vérification, de déduplication et de périmètre d'écriture ci-dessous restent celles de la [Skill](../SKILL.md). L'identifiant de base Airtable est remplacé par `<ID_BASE_AIRTABLE>`.
 

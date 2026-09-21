@@ -42,7 +42,7 @@ Répartition des rôles : Direction de l'intelligence marketing (cadrage, mandat
 Les séries automatisées répétées (Firecrawl les 9, 14, 15, 16 et 19 sept. ; Apify les 9 et 16 sept.) montrent une exécution à plusieurs dates distinctes. Les 127 lignes de Firecrawl et d'Apify portent toutes un nom dans « Opératrice ou opérateur » (le compte sous lequel les tâches s'exécutent, selon leurs instructions) : c'est donc le champ **Connecteur**, et non l'absence d'opérateur, qui distingue une collecte automatisée d'une collecte manuelle.
 
 **Rythme déclaré par le mandat** : trois tâches planifiées hebdomadaires (lundi 8 h : prix et promotions ; mardi 9 h : sources institutionnelles, emploi et presse ; mercredi 9 h : avis et localisateurs) et sept collectes manuelles (six le lundi, une chaque mois).
-**Non vérifié** : le mécanisme qui déclenche ces tâches. Aucune tâche planifiée n'est visible depuis l'environnement d'audit ; seul le Journal prouve les exécutions.
+**Trois tâches planifiées actives** dans l'application Claude (capture d'écran fournie par l'équipe le 20 sept. 2026) : collecte hebdomadaire (lundi 8 h), collecte des informations carrière (mardi 9 h), collecte des avis publics (mercredi 9 h). **Non vérifié** : le texte complet courant de chaque tâche (le début affiché correspond aux instructions archivées du 9 sept.).
 
 **Collecte manuelle** : sept sources où le test d'automatisation a échoué (circulaires hors HTML avec refus HTTP 403, pages Home Depot dépendantes de la succursale, localisateur BMR dépendant de la géolocalisation). Un repli manuel n'est jamais silencieux : la ligne de Journal porte le connecteur « Manuel » et la raison du repli dans « Erreurs ». Procédure : [workflows/collectes_manuelles.md](../workflows/collectes_manuelles.md).
 
@@ -61,7 +61,7 @@ Point de vigilance : le dépôt ne peut pas prouver quel champ a été écrit pa
 | À valider | 60 |
 | Rejetées | 7 (6 hors KIQ, 1 citation inexacte) |
 
-Régime de validation appliqué : vérification humaine contre la page source. **Aucun registre distinct des validations croisées** n'existe dans la base (cinq tables seulement) ; le motif de rejet et le champ « Validé par » en tiennent lieu. Perplexity, prévu au cours pour la vérification ancrée, n'a pas d'usage documenté (voir [déclaration d'usage de l'IA](07_declaration_usage_ia.md)).
+Régime de validation appliqué : vérification humaine contre la page source. **Aucun registre distinct des validations croisées** n'existe dans la base (cinq tables seulement) ; le motif de rejet et le champ « Validé par » en tiennent lieu. Perplexity est utilisé par le Responsable des insights pour vérifier les informations collectées (déclaré par l'équipe le 20 sept. 2026) ; ces vérifications ne sont tracées ni dans la base ni dans le dépôt (voir [déclaration d'usage de l'IA](07_declaration_usage_ia.md)).
 
 Anomalie : 57 des 60 fiches « À valider » portent déjà les cinq noms de l'équipe dans « Validé par », alors que la règle prévoit un champ vide avant validation. Cause non vérifiée. Le statut, non le nom, fait foi de la validation.
 
@@ -70,7 +70,7 @@ Anomalie : 57 des 60 fiches « À valider » portent déjà les cinq noms de l'�
 - **Canal 1, brief BLUF aux deux semaines** vers la Direction du marchandisage et des promotions, Québec. **Aucun envoi automatisé démontré.**
 - **Canal 2, alertes au fil de l'eau** vers la Direction de l'intelligence marketing, qui décide de la transmission au décideur. Règles : [04_alertes_et_seuils.md](04_alertes_et_seuils.md).
 - Automatisations Airtable d'alerte interne : déployées, en échec faute de destinataire collaborateur de la base (du 8 au 19 sept. selon l'automatisation) ; deux exécutées avec succès depuis (19 et 20 sept.), la troisième (hebdomadaire) n'ayant eu qu'une exécution, en échec, le 14 sept. Réception des courriels non vérifiée.
-- Gmail : test de connexion refusé lors de l'audit du 20 sept. ; **non vérifié**.
+- Gmail (compte dédié) : connexion testée le 5 sept. (déclaré) ; **envoi de briefs et réception d'alertes non essayés** : le cycle de collecte n'a pas encore produit le résultat final à envoyer.
 
 ## 7. Traçabilité de bout en bout
 

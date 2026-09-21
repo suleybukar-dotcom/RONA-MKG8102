@@ -17,21 +17,22 @@ Trois hypothèses rivales (H1 réplique rapide des rivaux, H2 avance tarifaire d
 ## 3. Architecture générale
 
 ```mermaid
-flowchart LR
-  K[KIQ et hypothèses] --> S[Sources cotées<br/>48]
-  S --> C[Collecte<br/>Firecrawl · Apify · manuelle]
-  C --> J[Journal de collecte]
-  C --> T[Traitement Claude<br/>Skill fiche-de-veille]
-  T --> F[Fiches de veille<br/>statut À valider]
-  F --> V{{Contrôle humain 1<br/>validation ou rejet}}
-  V --> Q[Vue Validée]
-  Q --> B[Brief BLUF et alertes]
-  B --> D{{Contrôle humain 2<br/>accord avant diffusion}}
-  D --> R[Décideur]
+flowchart TB
+  K["KIQ et hypothèses"] --> S["Sources cotées (48)"]
+  S --> C["Collecte : Firecrawl, Apify, manuelle"]
+  C --> J["Journal de collecte"]
+  C --> T["Traitement Claude (Skill fiche-de-veille)"]
+  T --> F["Fiches de veille, statut À valider"]
+  F --> V{{"Contrôle humain 1 : validation ou rejet"}}
+  V --> Q["Vue Validée"]
+  Q --> B["Brief BLUF et alertes"]
+  B --> D{{"Contrôle humain 2 : accord avant diffusion"}}
+  D --> R["Décideur"]
 ```
 
 - **Mémoire** : base Airtable à cinq tables reliées (KIQ, Acteurs, Sources, Fiches de veille, Journal de collecte). Schéma : [documentation/02_schema_airtable.md](documentation/02_schema_airtable.md).
 - **Chaîne, maillon par maillon**, niveaux d'automatisation et points de contrôle : [documentation/03_chaine_de_veille.md](documentation/03_chaine_de_veille.md).
+- **Schémas détaillés** (modèle de données, cycle de vie d'une fiche, calendrier de collecte, diffusion et contrôles humains, gestion des échecs) : [documentation/08_schemas.md](documentation/08_schemas.md).
 - **Principe** : la machine écrit uniquement au statut « À valider » et s'arrête. Une personne nommée valide ou rejette. Aucun brief ni aucune alerte ne part sans accord humain explicite.
 
 ## 4. Sources utilisées
@@ -46,16 +47,16 @@ flowchart LR
 | Apify | Avis publics de 12 succursales | Oui | 43 lignes du Journal, 12 sources | Panne d'authentification du 9 sept. (12 échecs, 12 reprises) |
 | Airtable | Mémoire structurée | Oui | Base lue et écrite ; 4 automatisations | Voir [défaillances](documentation/06_defaillances_connues.md) |
 | GitHub | Versionnement | Oui | Ce dépôt | Aucune |
-| Gmail (compte dédié) | Envoi des briefs, réception des alertes | **Non vérifié** | Test refusé lors de l'audit du 20 sept. | Envoi d'un brief non démontré par les pièces consultées |
-| Perplexity | Vérification ancrée | **Aucun usage documenté** | Déclaration d'usage du mandat : aucun autre modèle que Claude | Régime de validation croisée automatisée non appliqué |
+| Gmail (compte dédié) | Envoi des briefs, réception des alertes | Connexion testée le 5 sept. (déclaré) ; **envoi de briefs et réception d'alertes non essayés** | Le cycle de collecte n'a pas encore produit le résultat final à envoyer | Aucune diffusion par Gmail n'est démontrée |
+| Perplexity | Vérification des informations collectées, par le Responsable des insights | Oui (déclaré par l'équipe) | Aucune trace versée : requêtes et fiches vérifiées non documentées ; la déclaration du mandat indiquait « aucun autre modèle » | À documenter dans la [déclaration d'usage de l'IA](documentation/07_declaration_usage_ia.md) |
 
 ## 6. Fonctionnement de la collecte
 
-Le mandat déclare trois tâches planifiées hebdomadaires (lundi 8 h : prix et promotions ; mardi 9 h : sources institutionnelles, emploi, presse ; mercredi 9 h : avis et localisateurs) et sept collectes manuelles là où l'automatisation a échoué (circulaires, pages Home Depot, localisateur BMR). **L'exécution récurrente est prouvée par le Journal de collecte** (154 lignes du 6 au 19 sept. 2026). Le mécanisme de planification lui-même n'est pas observable depuis ce dépôt : **non vérifié**. Détails : [workflows/](workflows/) et [documentation/03_chaine_de_veille.md](documentation/03_chaine_de_veille.md).
+Le mandat déclare trois tâches planifiées hebdomadaires (lundi 8 h : prix et promotions ; mardi 9 h : sources institutionnelles, emploi, presse ; mercredi 9 h : avis et localisateurs) et sept collectes manuelles là où l'automatisation a échoué (circulaires, pages Home Depot, localisateur BMR). **L'exécution récurrente est prouvée par le Journal de collecte** (154 lignes du 6 au 19 sept. 2026). **Trois tâches planifiées actives** figurent dans la liste des tâches de l'application Claude (capture d'écran fournie par l'équipe le 20 sept. 2026) : collecte hebdomadaire (lundi 8 h), collecte des informations carrière (mardi 9 h) et collecte des avis publics (mercredi 9 h). Leur texte complet courant n'a pas été relu : le début du texte affiché correspond aux instructions archivées du 9 sept., dont les mots « bimensuelle » et « mensuelle » subsistent alors que la cadence est hebdomadaire. Détails : [workflows/](workflows/) et [documentation/03_chaine_de_veille.md](documentation/03_chaine_de_veille.md).
 
 ## 7. Traitement, validation et traçabilité
 
-- **Traitement** : Claude applique la Skill [SKILL.md](SKILL.md) (v2) et produit une fiche par fait : résumé, forme de veille, nature (fait, interprétation, recommandation), hypothèse concernée, crédibilité, niveau de confiance, pertinence de 1 à 5, champs vides signalés. Aucune donnée absente de la page n'est complétée.
+- **Traitement** : Claude applique la Skill [SKILL.md](SKILL.md) (validée par l'équipe) et produit une fiche par fait : résumé, forme de veille, nature (fait, interprétation, recommandation), hypothèse concernée, crédibilité, niveau de confiance, pertinence de 1 à 5, champs vides signalés. Aucune donnée absente de la page n'est complétée.
 - **Validation humaine** : le statut, le champ « Validé par » et le motif de rejet sont réservés à l'humain. État au 20 sept. 2026 : 120 fiches, dont 53 validées, 60 à valider et 7 rejetées.
 - **Traçabilité** : chaque fiche renvoie à sa source, à son acteur et à sa KIQ, porte l'adresse exacte et l'extrait cité ; chaque collecte laisse une ligne au Journal, échecs compris. Grille de confiance : [documentation/05_grille_de_confiance.md](documentation/05_grille_de_confiance.md).
 
@@ -63,7 +64,7 @@ Le mandat déclare trois tâches planifiées hebdomadaires (lundi 8 h : prix et 
 
 Deux canaux prévus par le mandat : un **brief BLUF aux deux semaines** vers la Direction du marchandisage et des promotions, et des **alertes au fil de l'eau** vers la Direction de l'intelligence marketing, qui décide de leur transmission. Règles et seuils : [documentation/04_alertes_et_seuils.md](documentation/04_alertes_et_seuils.md).
 
-**État réel** : trois automatisations Airtable d'alerte interne sont déployées ; elles ont échoué faute de destinataire collaborateur de la base (du 8 au 19 sept. selon l'automatisation). Deux se sont ensuite exécutées avec succès (19 et 20 sept.) ; la troisième, hebdomadaire, n'a eu qu'une exécution, en échec, le 14 sept. Réception des courriels non vérifiée. L'envoi automatisé d'un brief par Gmail n'est **pas démontré** par les éléments consultés. Les briefs ne sont pas publiés dans ce dépôt : ils ne circulent que vers les destinataires prévus (voir [outputs/archive_briefs.md](outputs/archive_briefs.md)).
+**État réel** : trois automatisations Airtable d'alerte interne sont déployées ; elles ont échoué faute de destinataire collaborateur de la base (du 8 au 19 sept. selon l'automatisation). Deux se sont ensuite exécutées avec succès (19 et 20 sept.) ; la troisième, hebdomadaire, n'a eu qu'une exécution, en échec, le 14 sept. Réception des courriels non vérifiée. **Gmail** : l'envoi de briefs et la réception d'alertes par Gmail n'ont **pas été essayés** à ce jour, le cycle de collecte n'ayant pas encore produit le résultat final à envoyer. Le brief remis est archivé en version texte, noms et identifiants retirés (voir [outputs/brief_decisionnel_2026-09-19.md](outputs/brief_decisionnel_2026-09-19.md) et le [registre](outputs/archive_briefs.md)).
 
 ## 9. Limites du dispositif
 
@@ -73,8 +74,8 @@ Angle mort assumé : la veille technologique et la veille sociétale sont exclue
 
 | Élément | Fichier |
 |---|---|
-| Skill d'équipe, version courante | [SKILL.md](SKILL.md) |
-| Historique de la Skill | [skills/historique/](skills/historique/) |
+| Skill d'équipe validée | [SKILL.md](SKILL.md) |
+| Historique de la Skill et proposition de révision | [skills/historique/](skills/historique/) et [skills/propositions/](skills/propositions/) |
 | KIQ et hypothèses | [documentation/01_kiq_et_hypotheses.md](documentation/01_kiq_et_hypotheses.md) |
 | Sources cotées | [configuration/sources.csv](configuration/sources.csv) |
 | Schéma de la base | [documentation/02_schema_airtable.md](documentation/02_schema_airtable.md) |
@@ -85,7 +86,8 @@ Angle mort assumé : la veille technologique et la veille sociétale sont exclue
 | Défaillances connues et replis | [documentation/06_defaillances_connues.md](documentation/06_defaillances_connues.md) |
 | Déclaration d'usage de l'IA | [documentation/07_declaration_usage_ia.md](documentation/07_declaration_usage_ia.md) |
 | Conformité aux exigences officielles | [documentation/00_conformite.md](documentation/00_conformite.md) |
-| Exemples de sorties réelles | [outputs/](outputs/) |
+| Exemples de sorties réelles et brief remis (version texte) | [outputs/](outputs/) |
+| Schémas Mermaid | [documentation/08_schemas.md](documentation/08_schemas.md) |
 
 ## 11. Reproduire une collecte
 
